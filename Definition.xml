@@ -1032,59 +1032,6 @@
         </p:Content>
     </Shape>
 
-    <Shape displayName="university/bank/institution"
-        icon="data:image/svg+xml;charset=utf8,&lt;svg xmlns=&quot;http://www.w3.org/2000/svg&quot; id=&quot;glyph&quot; width=&quot;32&quot; height=&quot;32&quot; viewBox=&quot;0 0 2048 2048&quot;&gt;&lt;path d=&quot;M960 1536l960 -384v-128h-128q0 -26 -20.5 -45t-48.5 -19h-1526q-28 0 -48.5 19t-20.5 45h-128v128zM256 896h256v-768h128v768h256v-768h128v768h256v-768h128v768h256v-768h59q28 0 48.5 -19t20.5 -45v-64h-1664v64q0 26 20.5 45t48.5 19h59v768zM1851 -64 q28 0 48.5 -19t20.5 -45v-128h-1920v128q0 26 20.5 45t48.5 19h1782z&quot; transform=&quot;translate(0, 1664) scale(1,-1)&quot; /&gt;&lt;/svg&gt;"
-        id="university">
-        <Properties>
-            <PropertyGroup>
-                <Property displayName="Size" name="box" p:lockRatio="true" type="Dimension"><E>Dimension.fromString("" + $$initialSize.value + "," + $$initialSize.value)</E></Property>
-                <Property displayName="With Shadow" name="withShadow" type="Bool">
-                    <E>Bool.fromString($$withShadow.value)</E>
-                </Property>
-                <Property displayName="Disabled" name="disabled" type="Bool">false</Property>
-            </PropertyGroup>
-            <PropertyGroup name="Colors">
-                <Property displayName="Shadow Color" name="shadowColor" type="Color">
-                    <E>$$shadowColor</E>
-                </Property>
-                <Property displayName="Color" name="fillColor" type="Color">
-                    <E>$$fillColor</E>
-                </Property>
-            </PropertyGroup>
-            <PropertyGroup name="Disabled Color">
-                <Property displayName="Disabled Color" name="disabledColor" type="Color">
-                    <E>$$disabledColor</E>
-                </Property>
-            </PropertyGroup>
-        </Properties>
-        <Behaviors>
-            <For ref="shadow">
-                <Fill>$shadowColor</Fill>
-                <Visibility>$withShadow</Visibility>
-            </For>
-            <For ref="group">
-                <Transform>[scale($box.w/32, $box.w/32)]</Transform>
-            </For>
-            <For ref="icon">
-                <Fill>$disabled.value ? $disabledColor : $fillColor</Fill>
-            </For>
-        </Behaviors>
-        <p:Content xmlns="http://www.w3.org/2000/svg">
-            <defs>
-                <path
-                    d="M960 1536l960 -384v-128h-128q0 -26 -20.5 -45t-48.5 -19h-1526q-28 0 -48.5 19t-20.5 45h-128v128zM256 896h256v-768h128v768h256v-768h128v768h256v-768h128v768h256v-768h59q28 0 48.5 -19t20.5 -45v-64h-1664v64q0 26 20.5 45t48.5 19h59v768zM1851 -64 q28 0 48.5 -19t20.5 -45v-128h-1920v128q0 26 20.5 45t48.5 19h1782z"
-                    id="glyph" transform="scale(0.015625, 0.015625) translate(0, 1664) scale(1,-1)" />
-            </defs>
-            <g id="group">
-                <rect fill="rgba(0, 0, 0, 0)" fill-opacity="0" height="32" stroke="none" width="32" x="0" y="0" />
-                <g transform="translate(1, 1)">
-                    <use id="shadow" xlink:href="#glyph" />
-                </g>
-                <use id="icon" xlink:href="#glyph" />
-            </g>
-        </p:Content>
-    </Shape>
-
     <Shape displayName="bar-chart/bar-chart-o"
         icon="data:image/svg+xml;charset=utf8,&lt;svg xmlns=&quot;http://www.w3.org/2000/svg&quot; id=&quot;glyph&quot; width=&quot;32&quot; height=&quot;32&quot; viewBox=&quot;0 0 2048 2048&quot;&gt;&lt;path d=&quot;M640 640v-512h-256v512h256zM1024 1152v-1024h-256v1024h256zM2048 0v-128h-2048v1536h128v-1408h1920zM1408 896v-768h-256v768h256zM1792 1280v-1152h-256v1152h256z&quot; transform=&quot;translate(0, 1664) scale(1,-1)&quot; /&gt;&lt;/svg&gt;"
         id="bar-chart">
@@ -1562,7 +1509,7 @@
         </p:Content>
     </Shape>
 
-    <Shape displayName="bed"
+    <Shape displayName="bed/hotel"
         icon="data:image/svg+xml;charset=utf8,&lt;svg xmlns=&quot;http://www.w3.org/2000/svg&quot; id=&quot;glyph&quot; width=&quot;32&quot; height=&quot;32&quot; viewBox=&quot;0 0 2048 2048&quot;&gt;&lt;path d=&quot;M256 512h1728q26 0 45 -19t19 -45v-448h-256v256h-1536v-256h-256v1216q0 26 19 45t45 19h128q26 0 45 -19t19 -45v-704zM832 832q0 106 -75 181t-181 75t-181 -75t-75 -181t75 -181t181 -75t181 75t75 181zM2048 576v64q0 159 -112.5 271.5t-271.5 112.5h-704 q-26 0 -45 -19t-19 -45v-384h1152z&quot; transform=&quot;translate(0, 1664) scale(1,-1)&quot; /&gt;&lt;/svg&gt;"
         id="bed">
         <Properties>
@@ -9141,6 +9088,695 @@
         </p:Content>
     </Shape>
 
+    <Shape displayName="headphones"
+        icon="data:image/svg+xml;charset=utf8,&lt;svg xmlns=&quot;http://www.w3.org/2000/svg&quot; id=&quot;glyph&quot; width=&quot;32&quot; height=&quot;32&quot; viewBox=&quot;0 0 2048 2048&quot;&gt;&lt;path d=&quot;M1664 650q0 -166 -60 -314l-20 -49l-185 -33q-22 -83 -90.5 -136.5t-156.5 -53.5v-32q0 -14 -9 -23t-23 -9h-64q-14 0 -23 9t-9 23v576q0 14 9 23t23 9h64q14 0 23 -9t9 -23v-32q71 0 130 -35.5t93 -95.5l68 12q29 95 29 193q0 148 -88 279t-236.5 209t-315.5 78 t-315.5 -78t-236.5 -209t-88 -279q0 -98 29 -193l68 -12q34 60 93 95.5t130 35.5v32q0 14 9 23t23 9h64q14 0 23 -9t9 -23v-576q0 -14 -9 -23t-23 -9h-64q-14 0 -23 9t-9 23v32q-88 0 -156.5 53.5t-90.5 136.5l-185 33l-20 49q-60 148 -60 314q0 151 67 291t179 242.5 t266 163.5t320 61t320 -61t266 -163.5t179 -242.5t67 -291z&quot; transform=&quot;translate(220, 1664) scale(1,-1)&quot; /&gt;&lt;/svg&gt;"
+        id="headphones">
+        <Properties>
+            <PropertyGroup>
+                <Property displayName="Size" name="box" p:lockRatio="true" type="Dimension"><E>Dimension.fromString("" + $$initialSize.value + "," + $$initialSize.value)</E></Property>
+                <Property displayName="With Shadow" name="withShadow" type="Bool">
+                    <E>Bool.fromString($$withShadow.value)</E>
+                </Property>
+                <Property displayName="Disabled" name="disabled" type="Bool">false</Property>
+            </PropertyGroup>
+            <PropertyGroup name="Colors">
+                <Property displayName="Shadow Color" name="shadowColor" type="Color">
+                    <E>$$shadowColor</E>
+                </Property>
+                <Property displayName="Color" name="fillColor" type="Color">
+                    <E>$$fillColor</E>
+                </Property>
+            </PropertyGroup>
+            <PropertyGroup name="Disabled Color">
+                <Property displayName="Disabled Color" name="disabledColor" type="Color">
+                    <E>$$disabledColor</E>
+                </Property>
+            </PropertyGroup>
+        </Properties>
+        <Behaviors>
+            <For ref="shadow">
+                <Fill>$shadowColor</Fill>
+                <Visibility>$withShadow</Visibility>
+            </For>
+            <For ref="group">
+                <Transform>[scale($box.w/32, $box.w/32)]</Transform>
+            </For>
+            <For ref="icon">
+                <Fill>$disabled.value ? $disabledColor : $fillColor</Fill>
+            </For>
+        </Behaviors>
+        <p:Content xmlns="http://www.w3.org/2000/svg">
+            <defs>
+                <path
+                    d="M1664 650q0 -166 -60 -314l-20 -49l-185 -33q-22 -83 -90.5 -136.5t-156.5 -53.5v-32q0 -14 -9 -23t-23 -9h-64q-14 0 -23 9t-9 23v576q0 14 9 23t23 9h64q14 0 23 -9t9 -23v-32q71 0 130 -35.5t93 -95.5l68 12q29 95 29 193q0 148 -88 279t-236.5 209t-315.5 78 t-315.5 -78t-236.5 -209t-88 -279q0 -98 29 -193l68 -12q34 60 93 95.5t130 35.5v32q0 14 9 23t23 9h64q14 0 23 -9t9 -23v-576q0 -14 -9 -23t-23 -9h-64q-14 0 -23 9t-9 23v32q-88 0 -156.5 53.5t-90.5 136.5l-185 33l-20 49q-60 148 -60 314q0 151 67 291t179 242.5 t266 163.5t320 61t320 -61t266 -163.5t179 -242.5t67 -291z"
+                    id="glyph" transform="scale(0.015625, 0.015625) translate(220, 1664) scale(1,-1)" />
+            </defs>
+            <g id="group">
+                <rect fill="rgba(0, 0, 0, 0)" fill-opacity="0" height="32" stroke="none" width="32" x="0" y="0" />
+                <g transform="translate(1, 1)">
+                    <use id="shadow" xlink:href="#glyph" />
+                </g>
+                <use id="icon" xlink:href="#glyph" />
+            </g>
+        </p:Content>
+    </Shape>
+
+    <Shape displayName="heart"
+        icon="data:image/svg+xml;charset=utf8,&lt;svg xmlns=&quot;http://www.w3.org/2000/svg&quot; id=&quot;glyph&quot; width=&quot;32&quot; height=&quot;32&quot; viewBox=&quot;0 0 2048 2048&quot;&gt;&lt;path d=&quot;M896 -128q-26 0 -44 18l-624 602q-10 8 -27.5 26t-55.5 65.5t-68 97.5t-53.5 121t-23.5 138q0 220 127 344t351 124q62 0 126.5 -21.5t120 -58t95.5 -68.5t76 -68q36 36 76 68t95.5 68.5t120 58t126.5 21.5q224 0 351 -124t127 -344q0 -221 -229 -450l-623 -600 q-18 -18 -44 -18z&quot; transform=&quot;translate(120, 1664) scale(1,-1)&quot; /&gt;&lt;/svg&gt;"
+        id="heart">
+        <Properties>
+            <PropertyGroup>
+                <Property displayName="Size" name="box" p:lockRatio="true" type="Dimension"><E>Dimension.fromString("" + $$initialSize.value + "," + $$initialSize.value)</E></Property>
+                <Property displayName="With Shadow" name="withShadow" type="Bool">
+                    <E>Bool.fromString($$withShadow.value)</E>
+                </Property>
+                <Property displayName="Disabled" name="disabled" type="Bool">false</Property>
+            </PropertyGroup>
+            <PropertyGroup name="Colors">
+                <Property displayName="Shadow Color" name="shadowColor" type="Color">
+                    <E>$$shadowColor</E>
+                </Property>
+                <Property displayName="Color" name="fillColor" type="Color">
+                    <E>$$fillColor</E>
+                </Property>
+            </PropertyGroup>
+            <PropertyGroup name="Disabled Color">
+                <Property displayName="Disabled Color" name="disabledColor" type="Color">
+                    <E>$$disabledColor</E>
+                </Property>
+            </PropertyGroup>
+        </Properties>
+        <Behaviors>
+            <For ref="shadow">
+                <Fill>$shadowColor</Fill>
+                <Visibility>$withShadow</Visibility>
+            </For>
+            <For ref="group">
+                <Transform>[scale($box.w/32, $box.w/32)]</Transform>
+            </For>
+            <For ref="icon">
+                <Fill>$disabled.value ? $disabledColor : $fillColor</Fill>
+            </For>
+        </Behaviors>
+        <p:Content xmlns="http://www.w3.org/2000/svg">
+            <defs>
+                <path
+                    d="M896 -128q-26 0 -44 18l-624 602q-10 8 -27.5 26t-55.5 65.5t-68 97.5t-53.5 121t-23.5 138q0 220 127 344t351 124q62 0 126.5 -21.5t120 -58t95.5 -68.5t76 -68q36 36 76 68t95.5 68.5t120 58t126.5 21.5q224 0 351 -124t127 -344q0 -221 -229 -450l-623 -600 q-18 -18 -44 -18z"
+                    id="glyph" transform="scale(0.015625, 0.015625) translate(120, 1664) scale(1,-1)" />
+            </defs>
+            <g id="group">
+                <rect fill="rgba(0, 0, 0, 0)" fill-opacity="0" height="32" stroke="none" width="32" x="0" y="0" />
+                <g transform="translate(1, 1)">
+                    <use id="shadow" xlink:href="#glyph" />
+                </g>
+                <use id="icon" xlink:href="#glyph" />
+            </g>
+        </p:Content>
+    </Shape>
+
+    <Shape displayName="heart-o"
+        icon="data:image/svg+xml;charset=utf8,&lt;svg xmlns=&quot;http://www.w3.org/2000/svg&quot; id=&quot;glyph&quot; width=&quot;32&quot; height=&quot;32&quot; viewBox=&quot;0 0 2048 2048&quot;&gt;&lt;path d=&quot;M1664 940q0 81 -21.5 143t-55 98.5t-81.5 59.5t-94 31t-98 8t-112 -25.5t-110.5 -64t-86.5 -72t-60 -61.5q-18 -22 -49 -22t-49 22q-24 28 -60 61.5t-86.5 72t-110.5 64t-112 25.5t-98 -8t-94 -31t-81.5 -59.5t-55 -98.5t-21.5 -143q0 -168 187 -355l581 -560l580 559 q188 188 188 356zM1792 940q0 -221 -229 -450l-623 -600q-18 -18 -44 -18t-44 18l-624 602q-10 8 -27.5 26t-55.5 65.5t-68 97.5t-53.5 121t-23.5 138q0 220 127 344t351 124q62 0 126.5 -21.5t120 -58t95.5 -68.5t76 -68q36 36 76 68t95.5 68.5t120 58t126.5 21.5 q224 0 351 -124t127 -344z&quot; transform=&quot;translate(120, 1664) scale(1,-1)&quot; /&gt;&lt;/svg&gt;"
+        id="heart-o">
+        <Properties>
+            <PropertyGroup>
+                <Property displayName="Size" name="box" p:lockRatio="true" type="Dimension"><E>Dimension.fromString("" + $$initialSize.value + "," + $$initialSize.value)</E></Property>
+                <Property displayName="With Shadow" name="withShadow" type="Bool">
+                    <E>Bool.fromString($$withShadow.value)</E>
+                </Property>
+                <Property displayName="Disabled" name="disabled" type="Bool">false</Property>
+            </PropertyGroup>
+            <PropertyGroup name="Colors">
+                <Property displayName="Shadow Color" name="shadowColor" type="Color">
+                    <E>$$shadowColor</E>
+                </Property>
+                <Property displayName="Color" name="fillColor" type="Color">
+                    <E>$$fillColor</E>
+                </Property>
+            </PropertyGroup>
+            <PropertyGroup name="Disabled Color">
+                <Property displayName="Disabled Color" name="disabledColor" type="Color">
+                    <E>$$disabledColor</E>
+                </Property>
+            </PropertyGroup>
+        </Properties>
+        <Behaviors>
+            <For ref="shadow">
+                <Fill>$shadowColor</Fill>
+                <Visibility>$withShadow</Visibility>
+            </For>
+            <For ref="group">
+                <Transform>[scale($box.w/32, $box.w/32)]</Transform>
+            </For>
+            <For ref="icon">
+                <Fill>$disabled.value ? $disabledColor : $fillColor</Fill>
+            </For>
+        </Behaviors>
+        <p:Content xmlns="http://www.w3.org/2000/svg">
+            <defs>
+                <path
+                    d="M1664 940q0 81 -21.5 143t-55 98.5t-81.5 59.5t-94 31t-98 8t-112 -25.5t-110.5 -64t-86.5 -72t-60 -61.5q-18 -22 -49 -22t-49 22q-24 28 -60 61.5t-86.5 72t-110.5 64t-112 25.5t-98 -8t-94 -31t-81.5 -59.5t-55 -98.5t-21.5 -143q0 -168 187 -355l581 -560l580 559 q188 188 188 356zM1792 940q0 -221 -229 -450l-623 -600q-18 -18 -44 -18t-44 18l-624 602q-10 8 -27.5 26t-55.5 65.5t-68 97.5t-53.5 121t-23.5 138q0 220 127 344t351 124q62 0 126.5 -21.5t120 -58t95.5 -68.5t76 -68q36 36 76 68t95.5 68.5t120 58t126.5 21.5 q224 0 351 -124t127 -344z"
+                    id="glyph" transform="scale(0.015625, 0.015625) translate(120, 1664) scale(1,-1)" />
+            </defs>
+            <g id="group">
+                <rect fill="rgba(0, 0, 0, 0)" fill-opacity="0" height="32" stroke="none" width="32" x="0" y="0" />
+                <g transform="translate(1, 1)">
+                    <use id="shadow" xlink:href="#glyph" />
+                </g>
+                <use id="icon" xlink:href="#glyph" />
+            </g>
+        </p:Content>
+    </Shape>
+
+    <Shape displayName="heartbeat"
+        icon="data:image/svg+xml;charset=utf8,&lt;svg xmlns=&quot;http://www.w3.org/2000/svg&quot; id=&quot;glyph&quot; width=&quot;32&quot; height=&quot;32&quot; viewBox=&quot;0 0 2048 2048&quot;&gt;&lt;path d=&quot;M1280 512h305q-5 -6 -10 -10.5t-9 -7.5l-3 -4l-623 -600q-18 -18 -44 -18t-44 18l-624 602q-5 2 -21 20h369q22 0 39.5 13.5t22.5 34.5l70 281l190 -667q6 -20 23 -33t39 -13q21 0 38 13t23 33l146 485l56 -112q18 -35 57 -35zM1792 940q0 -145 -103 -300h-369l-111 221 q-8 17 -25.5 27t-36.5 8q-45 -5 -56 -46l-129 -430l-196 686q-6 20 -23.5 33t-39.5 13t-39 -13.5t-22 -34.5l-116 -464h-423q-103 155 -103 300q0 220 127 344t351 124q62 0 126.5 -21.5t120 -58t95.5 -68.5t76 -68q36 36 76 68t95.5 68.5t120 58t126.5 21.5q224 0 351 -124 t127 -344z&quot; transform=&quot;translate(120, 1664) scale(1,-1)&quot; /&gt;&lt;/svg&gt;"
+        id="heartbeat">
+        <Properties>
+            <PropertyGroup>
+                <Property displayName="Size" name="box" p:lockRatio="true" type="Dimension"><E>Dimension.fromString("" + $$initialSize.value + "," + $$initialSize.value)</E></Property>
+                <Property displayName="With Shadow" name="withShadow" type="Bool">
+                    <E>Bool.fromString($$withShadow.value)</E>
+                </Property>
+                <Property displayName="Disabled" name="disabled" type="Bool">false</Property>
+            </PropertyGroup>
+            <PropertyGroup name="Colors">
+                <Property displayName="Shadow Color" name="shadowColor" type="Color">
+                    <E>$$shadowColor</E>
+                </Property>
+                <Property displayName="Color" name="fillColor" type="Color">
+                    <E>$$fillColor</E>
+                </Property>
+            </PropertyGroup>
+            <PropertyGroup name="Disabled Color">
+                <Property displayName="Disabled Color" name="disabledColor" type="Color">
+                    <E>$$disabledColor</E>
+                </Property>
+            </PropertyGroup>
+        </Properties>
+        <Behaviors>
+            <For ref="shadow">
+                <Fill>$shadowColor</Fill>
+                <Visibility>$withShadow</Visibility>
+            </For>
+            <For ref="group">
+                <Transform>[scale($box.w/32, $box.w/32)]</Transform>
+            </For>
+            <For ref="icon">
+                <Fill>$disabled.value ? $disabledColor : $fillColor</Fill>
+            </For>
+        </Behaviors>
+        <p:Content xmlns="http://www.w3.org/2000/svg">
+            <defs>
+                <path
+                    d="M1280 512h305q-5 -6 -10 -10.5t-9 -7.5l-3 -4l-623 -600q-18 -18 -44 -18t-44 18l-624 602q-5 2 -21 20h369q22 0 39.5 13.5t22.5 34.5l70 281l190 -667q6 -20 23 -33t39 -13q21 0 38 13t23 33l146 485l56 -112q18 -35 57 -35zM1792 940q0 -145 -103 -300h-369l-111 221 q-8 17 -25.5 27t-36.5 8q-45 -5 -56 -46l-129 -430l-196 686q-6 20 -23.5 33t-39.5 13t-39 -13.5t-22 -34.5l-116 -464h-423q-103 155 -103 300q0 220 127 344t351 124q62 0 126.5 -21.5t120 -58t95.5 -68.5t76 -68q36 36 76 68t95.5 68.5t120 58t126.5 21.5q224 0 351 -124 t127 -344z"
+                    id="glyph" transform="scale(0.015625, 0.015625) translate(120, 1664) scale(1,-1)" />
+            </defs>
+            <g id="group">
+                <rect fill="rgba(0, 0, 0, 0)" fill-opacity="0" height="32" stroke="none" width="32" x="0" y="0" />
+                <g transform="translate(1, 1)">
+                    <use id="shadow" xlink:href="#glyph" />
+                </g>
+                <use id="icon" xlink:href="#glyph" />
+            </g>
+        </p:Content>
+    </Shape>
+
+    <Shape displayName="history"
+        icon="data:image/svg+xml;charset=utf8,&lt;svg xmlns=&quot;http://www.w3.org/2000/svg&quot; id=&quot;glyph&quot; width=&quot;32&quot; height=&quot;32&quot; viewBox=&quot;0 0 2048 2048&quot;&gt;&lt;path d=&quot;M1536 640q0 -156 -61 -298t-164 -245t-245 -164t-298 -61q-172 0 -327 72.5t-264 204.5q-7 10 -6.5 22.5t8.5 20.5l137 138q10 9 25 9q16 -2 23 -12q73 -95 179 -147t225 -52q104 0 198.5 40.5t163.5 109.5t109.5 163.5t40.5 198.5t-40.5 198.5t-109.5 163.5 t-163.5 109.5t-198.5 40.5q-98 0 -188 -35.5t-160 -101.5l137 -138q31 -30 14 -69q-17 -40 -59 -40h-448q-26 0 -45 19t-19 45v448q0 42 40 59q39 17 69 -14l130 -129q107 101 244.5 156.5t284.5 55.5q156 0 298 -61t245 -164t164 -245t61 -298zM896 928v-448q0 -14 -9 -23 t-23 -9h-320q-14 0 -23 9t-9 23v64q0 14 9 23t23 9h224v352q0 14 9 23t23 9h64q14 0 23 -9t9 -23z&quot; transform=&quot;translate(220, 1664) scale(1,-1)&quot; /&gt;&lt;/svg&gt;"
+        id="history">
+        <Properties>
+            <PropertyGroup>
+                <Property displayName="Size" name="box" p:lockRatio="true" type="Dimension"><E>Dimension.fromString("" + $$initialSize.value + "," + $$initialSize.value)</E></Property>
+                <Property displayName="With Shadow" name="withShadow" type="Bool">
+                    <E>Bool.fromString($$withShadow.value)</E>
+                </Property>
+                <Property displayName="Disabled" name="disabled" type="Bool">false</Property>
+            </PropertyGroup>
+            <PropertyGroup name="Colors">
+                <Property displayName="Shadow Color" name="shadowColor" type="Color">
+                    <E>$$shadowColor</E>
+                </Property>
+                <Property displayName="Color" name="fillColor" type="Color">
+                    <E>$$fillColor</E>
+                </Property>
+            </PropertyGroup>
+            <PropertyGroup name="Disabled Color">
+                <Property displayName="Disabled Color" name="disabledColor" type="Color">
+                    <E>$$disabledColor</E>
+                </Property>
+            </PropertyGroup>
+        </Properties>
+        <Behaviors>
+            <For ref="shadow">
+                <Fill>$shadowColor</Fill>
+                <Visibility>$withShadow</Visibility>
+            </For>
+            <For ref="group">
+                <Transform>[scale($box.w/32, $box.w/32)]</Transform>
+            </For>
+            <For ref="icon">
+                <Fill>$disabled.value ? $disabledColor : $fillColor</Fill>
+            </For>
+        </Behaviors>
+        <p:Content xmlns="http://www.w3.org/2000/svg">
+            <defs>
+                <path
+                    d="M1536 640q0 -156 -61 -298t-164 -245t-245 -164t-298 -61q-172 0 -327 72.5t-264 204.5q-7 10 -6.5 22.5t8.5 20.5l137 138q10 9 25 9q16 -2 23 -12q73 -95 179 -147t225 -52q104 0 198.5 40.5t163.5 109.5t109.5 163.5t40.5 198.5t-40.5 198.5t-109.5 163.5 t-163.5 109.5t-198.5 40.5q-98 0 -188 -35.5t-160 -101.5l137 -138q31 -30 14 -69q-17 -40 -59 -40h-448q-26 0 -45 19t-19 45v448q0 42 40 59q39 17 69 -14l130 -129q107 101 244.5 156.5t284.5 55.5q156 0 298 -61t245 -164t164 -245t61 -298zM896 928v-448q0 -14 -9 -23 t-23 -9h-320q-14 0 -23 9t-9 23v64q0 14 9 23t23 9h224v352q0 14 9 23t23 9h64q14 0 23 -9t9 -23z"
+                    id="glyph" transform="scale(0.015625, 0.015625) translate(220, 1664) scale(1,-1)" />
+            </defs>
+            <g id="group">
+                <rect fill="rgba(0, 0, 0, 0)" fill-opacity="0" height="32" stroke="none" width="32" x="0" y="0" />
+                <g transform="translate(1, 1)">
+                    <use id="shadow" xlink:href="#glyph" />
+                </g>
+                <use id="icon" xlink:href="#glyph" />
+            </g>
+        </p:Content>
+    </Shape>
+
+    <Shape displayName="home"
+        icon="data:image/svg+xml;charset=utf8,&lt;svg xmlns=&quot;http://www.w3.org/2000/svg&quot; id=&quot;glyph&quot; width=&quot;32&quot; height=&quot;32&quot; viewBox=&quot;0 0 2048 2048&quot;&gt;&lt;path d=&quot;M1408 544v-480q0 -26 -19 -45t-45 -19h-384v384h-256v-384h-384q-26 0 -45 19t-19 45v480q0 1 0.5 3t0.5 3l575 474l575 -474q1 -2 1 -6zM1631 613l-62 -74q-8 -9 -21 -11h-3q-13 0 -21 7l-692 577l-692 -577q-12 -8 -24 -7q-13 2 -21 11l-62 74q-8 10 -7 23.5t11 21.5 l719 599q32 26 76 26t76 -26l244 -204v195q0 14 9 23t23 9h192q14 0 23 -9t9 -23v-408l219 -182q10 -8 11 -21.5t-7 -23.5z&quot; transform=&quot;translate(220, 1664) scale(1,-1)&quot; /&gt;&lt;/svg&gt;"
+        id="home">
+        <Properties>
+            <PropertyGroup>
+                <Property displayName="Size" name="box" p:lockRatio="true" type="Dimension"><E>Dimension.fromString("" + $$initialSize.value + "," + $$initialSize.value)</E></Property>
+                <Property displayName="With Shadow" name="withShadow" type="Bool">
+                    <E>Bool.fromString($$withShadow.value)</E>
+                </Property>
+                <Property displayName="Disabled" name="disabled" type="Bool">false</Property>
+            </PropertyGroup>
+            <PropertyGroup name="Colors">
+                <Property displayName="Shadow Color" name="shadowColor" type="Color">
+                    <E>$$shadowColor</E>
+                </Property>
+                <Property displayName="Color" name="fillColor" type="Color">
+                    <E>$$fillColor</E>
+                </Property>
+            </PropertyGroup>
+            <PropertyGroup name="Disabled Color">
+                <Property displayName="Disabled Color" name="disabledColor" type="Color">
+                    <E>$$disabledColor</E>
+                </Property>
+            </PropertyGroup>
+        </Properties>
+        <Behaviors>
+            <For ref="shadow">
+                <Fill>$shadowColor</Fill>
+                <Visibility>$withShadow</Visibility>
+            </For>
+            <For ref="group">
+                <Transform>[scale($box.w/32, $box.w/32)]</Transform>
+            </For>
+            <For ref="icon">
+                <Fill>$disabled.value ? $disabledColor : $fillColor</Fill>
+            </For>
+        </Behaviors>
+        <p:Content xmlns="http://www.w3.org/2000/svg">
+            <defs>
+                <path
+                    d="M1408 544v-480q0 -26 -19 -45t-45 -19h-384v384h-256v-384h-384q-26 0 -45 19t-19 45v480q0 1 0.5 3t0.5 3l575 474l575 -474q1 -2 1 -6zM1631 613l-62 -74q-8 -9 -21 -11h-3q-13 0 -21 7l-692 577l-692 -577q-12 -8 -24 -7q-13 2 -21 11l-62 74q-8 10 -7 23.5t11 21.5 l719 599q32 26 76 26t76 -26l244 -204v195q0 14 9 23t23 9h192q14 0 23 -9t9 -23v-408l219 -182q10 -8 11 -21.5t-7 -23.5z"
+                    id="glyph" transform="scale(0.015625, 0.015625) translate(220, 1664) scale(1,-1)" />
+            </defs>
+            <g id="group">
+                <rect fill="rgba(0, 0, 0, 0)" fill-opacity="0" height="32" stroke="none" width="32" x="0" y="0" />
+                <g transform="translate(1, 1)">
+                    <use id="shadow" xlink:href="#glyph" />
+                </g>
+                <use id="icon" xlink:href="#glyph" />
+            </g>
+        </p:Content>
+    </Shape>
+
+    <Shape displayName="hourglass"
+        icon="data:image/svg+xml;charset=utf8,&lt;svg xmlns=&quot;http://www.w3.org/2000/svg&quot; id=&quot;glyph&quot; width=&quot;32&quot; height=&quot;32&quot; viewBox=&quot;0 0 2048 2048&quot;&gt;&lt;path d=&quot;M1504 -64q14 0 23 -9t9 -23v-128q0 -14 -9 -23t-23 -9h-1472q-14 0 -23 9t-9 23v128q0 14 9 23t23 9h1472zM130 0q3 55 16 107t30 95t46 87t53.5 76t64.5 69.5t66 60t70.5 55t66.5 47.5t65 43q-43 28 -65 43t-66.5 47.5t-70.5 55t-66 60t-64.5 69.5t-53.5 76t-46 87 t-30 95t-16 107h1276q-3 -55 -16 -107t-30 -95t-46 -87t-53.5 -76t-64.5 -69.5t-66 -60t-70.5 -55t-66.5 -47.5t-65 -43q43 -28 65 -43t66.5 -47.5t70.5 -55t66 -60t64.5 -69.5t53.5 -76t46 -87t30 -95t16 -107h-1276zM1504 1536q14 0 23 -9t9 -23v-128q0 -14 -9 -23t-23 -9 h-1472q-14 0 -23 9t-9 23v128q0 14 9 23t23 9h1472z&quot; transform=&quot;translate(220, 1664) scale(1,-1)&quot; /&gt;&lt;/svg&gt;"
+        id="hourglass">
+        <Properties>
+            <PropertyGroup>
+                <Property displayName="Size" name="box" p:lockRatio="true" type="Dimension"><E>Dimension.fromString("" + $$initialSize.value + "," + $$initialSize.value)</E></Property>
+                <Property displayName="With Shadow" name="withShadow" type="Bool">
+                    <E>Bool.fromString($$withShadow.value)</E>
+                </Property>
+                <Property displayName="Disabled" name="disabled" type="Bool">false</Property>
+            </PropertyGroup>
+            <PropertyGroup name="Colors">
+                <Property displayName="Shadow Color" name="shadowColor" type="Color">
+                    <E>$$shadowColor</E>
+                </Property>
+                <Property displayName="Color" name="fillColor" type="Color">
+                    <E>$$fillColor</E>
+                </Property>
+            </PropertyGroup>
+            <PropertyGroup name="Disabled Color">
+                <Property displayName="Disabled Color" name="disabledColor" type="Color">
+                    <E>$$disabledColor</E>
+                </Property>
+            </PropertyGroup>
+        </Properties>
+        <Behaviors>
+            <For ref="shadow">
+                <Fill>$shadowColor</Fill>
+                <Visibility>$withShadow</Visibility>
+            </For>
+            <For ref="group">
+                <Transform>[scale($box.w/32, $box.w/32)]</Transform>
+            </For>
+            <For ref="icon">
+                <Fill>$disabled.value ? $disabledColor : $fillColor</Fill>
+            </For>
+        </Behaviors>
+        <p:Content xmlns="http://www.w3.org/2000/svg">
+            <defs>
+                <path
+                    d="M1504 -64q14 0 23 -9t9 -23v-128q0 -14 -9 -23t-23 -9h-1472q-14 0 -23 9t-9 23v128q0 14 9 23t23 9h1472zM130 0q3 55 16 107t30 95t46 87t53.5 76t64.5 69.5t66 60t70.5 55t66.5 47.5t65 43q-43 28 -65 43t-66.5 47.5t-70.5 55t-66 60t-64.5 69.5t-53.5 76t-46 87 t-30 95t-16 107h1276q-3 -55 -16 -107t-30 -95t-46 -87t-53.5 -76t-64.5 -69.5t-66 -60t-70.5 -55t-66.5 -47.5t-65 -43q43 -28 65 -43t66.5 -47.5t70.5 -55t66 -60t64.5 -69.5t53.5 -76t46 -87t30 -95t16 -107h-1276zM1504 1536q14 0 23 -9t9 -23v-128q0 -14 -9 -23t-23 -9 h-1472q-14 0 -23 9t-9 23v128q0 14 9 23t23 9h1472z"
+                    id="glyph" transform="scale(0.015625, 0.015625) translate(220, 1664) scale(1,-1)" />
+            </defs>
+            <g id="group">
+                <rect fill="rgba(0, 0, 0, 0)" fill-opacity="0" height="32" stroke="none" width="32" x="0" y="0" />
+                <g transform="translate(1, 1)">
+                    <use id="shadow" xlink:href="#glyph" />
+                </g>
+                <use id="icon" xlink:href="#glyph" />
+            </g>
+        </p:Content>
+    </Shape>
+
+    <Shape displayName="hourglass-start/hourglass-1"
+        icon="data:image/svg+xml;charset=utf8,&lt;svg xmlns=&quot;http://www.w3.org/2000/svg&quot; id=&quot;glyph&quot; width=&quot;32&quot; height=&quot;32&quot; viewBox=&quot;0 0 2048 2048&quot;&gt;&lt;path d=&quot;M1408 1408q0 -261 -106.5 -461.5t-266.5 -306.5q160 -106 266.5 -306.5t106.5 -461.5h96q14 0 23 -9t9 -23v-64q0 -14 -9 -23t-23 -9h-1472q-14 0 -23 9t-9 23v64q0 14 9 23t23 9h96q0 261 106.5 461.5t266.5 306.5q-160 106 -266.5 306.5t-106.5 461.5h-96q-14 0 -23 9 t-9 23v64q0 14 9 23t23 9h1472q14 0 23 -9t9 -23v-64q0 -14 -9 -23t-23 -9h-96zM1280 1408h-1024q0 -66 9 -128h1006q9 61 9 128zM1280 -128q0 130 -34 249.5t-90.5 208t-126.5 152t-146 94.5h-230q-76 -31 -146 -94.5t-126.5 -152t-90.5 -208t-34 -249.5h1024z&quot; transform=&quot;translate(220, 1664) scale(1,-1)&quot; /&gt;&lt;/svg&gt;"
+        id="hourglass-start">
+        <Properties>
+            <PropertyGroup>
+                <Property displayName="Size" name="box" p:lockRatio="true" type="Dimension"><E>Dimension.fromString("" + $$initialSize.value + "," + $$initialSize.value)</E></Property>
+                <Property displayName="With Shadow" name="withShadow" type="Bool">
+                    <E>Bool.fromString($$withShadow.value)</E>
+                </Property>
+                <Property displayName="Disabled" name="disabled" type="Bool">false</Property>
+            </PropertyGroup>
+            <PropertyGroup name="Colors">
+                <Property displayName="Shadow Color" name="shadowColor" type="Color">
+                    <E>$$shadowColor</E>
+                </Property>
+                <Property displayName="Color" name="fillColor" type="Color">
+                    <E>$$fillColor</E>
+                </Property>
+            </PropertyGroup>
+            <PropertyGroup name="Disabled Color">
+                <Property displayName="Disabled Color" name="disabledColor" type="Color">
+                    <E>$$disabledColor</E>
+                </Property>
+            </PropertyGroup>
+        </Properties>
+        <Behaviors>
+            <For ref="shadow">
+                <Fill>$shadowColor</Fill>
+                <Visibility>$withShadow</Visibility>
+            </For>
+            <For ref="group">
+                <Transform>[scale($box.w/32, $box.w/32)]</Transform>
+            </For>
+            <For ref="icon">
+                <Fill>$disabled.value ? $disabledColor : $fillColor</Fill>
+            </For>
+        </Behaviors>
+        <p:Content xmlns="http://www.w3.org/2000/svg">
+            <defs>
+                <path
+                    d="M1408 1408q0 -261 -106.5 -461.5t-266.5 -306.5q160 -106 266.5 -306.5t106.5 -461.5h96q14 0 23 -9t9 -23v-64q0 -14 -9 -23t-23 -9h-1472q-14 0 -23 9t-9 23v64q0 14 9 23t23 9h96q0 261 106.5 461.5t266.5 306.5q-160 106 -266.5 306.5t-106.5 461.5h-96q-14 0 -23 9 t-9 23v64q0 14 9 23t23 9h1472q14 0 23 -9t9 -23v-64q0 -14 -9 -23t-23 -9h-96zM1280 1408h-1024q0 -66 9 -128h1006q9 61 9 128zM1280 -128q0 130 -34 249.5t-90.5 208t-126.5 152t-146 94.5h-230q-76 -31 -146 -94.5t-126.5 -152t-90.5 -208t-34 -249.5h1024z"
+                    id="glyph" transform="scale(0.015625, 0.015625) translate(220, 1664) scale(1,-1)" />
+            </defs>
+            <g id="group">
+                <rect fill="rgba(0, 0, 0, 0)" fill-opacity="0" height="32" stroke="none" width="32" x="0" y="0" />
+                <g transform="translate(1, 1)">
+                    <use id="shadow" xlink:href="#glyph" />
+                </g>
+                <use id="icon" xlink:href="#glyph" />
+            </g>
+        </p:Content>
+    </Shape>
+
+    <Shape displayName="hourglass-half/hourglass-2"
+        icon="data:image/svg+xml;charset=utf8,&lt;svg xmlns=&quot;http://www.w3.org/2000/svg&quot; id=&quot;glyph&quot; width=&quot;32&quot; height=&quot;32&quot; viewBox=&quot;0 0 2048 2048&quot;&gt;&lt;path d=&quot;M1408 1408q0 -261 -106.5 -461.5t-266.5 -306.5q160 -106 266.5 -306.5t106.5 -461.5h96q14 0 23 -9t9 -23v-64q0 -14 -9 -23t-23 -9h-1472q-14 0 -23 9t-9 23v64q0 14 9 23t23 9h96q0 261 106.5 461.5t266.5 306.5q-160 106 -266.5 306.5t-106.5 461.5h-96q-14 0 -23 9 t-9 23v64q0 14 9 23t23 9h1472q14 0 23 -9t9 -23v-64q0 -14 -9 -23t-23 -9h-96zM1280 1408h-1024q0 -206 85 -384h854q85 178 85 384zM1223 192q-54 141 -145.5 241.5t-194.5 142.5h-230q-103 -42 -194.5 -142.5t-145.5 -241.5h910z&quot; transform=&quot;translate(220, 1664) scale(1,-1)&quot; /&gt;&lt;/svg&gt;"
+        id="hourglass-half">
+        <Properties>
+            <PropertyGroup>
+                <Property displayName="Size" name="box" p:lockRatio="true" type="Dimension"><E>Dimension.fromString("" + $$initialSize.value + "," + $$initialSize.value)</E></Property>
+                <Property displayName="With Shadow" name="withShadow" type="Bool">
+                    <E>Bool.fromString($$withShadow.value)</E>
+                </Property>
+                <Property displayName="Disabled" name="disabled" type="Bool">false</Property>
+            </PropertyGroup>
+            <PropertyGroup name="Colors">
+                <Property displayName="Shadow Color" name="shadowColor" type="Color">
+                    <E>$$shadowColor</E>
+                </Property>
+                <Property displayName="Color" name="fillColor" type="Color">
+                    <E>$$fillColor</E>
+                </Property>
+            </PropertyGroup>
+            <PropertyGroup name="Disabled Color">
+                <Property displayName="Disabled Color" name="disabledColor" type="Color">
+                    <E>$$disabledColor</E>
+                </Property>
+            </PropertyGroup>
+        </Properties>
+        <Behaviors>
+            <For ref="shadow">
+                <Fill>$shadowColor</Fill>
+                <Visibility>$withShadow</Visibility>
+            </For>
+            <For ref="group">
+                <Transform>[scale($box.w/32, $box.w/32)]</Transform>
+            </For>
+            <For ref="icon">
+                <Fill>$disabled.value ? $disabledColor : $fillColor</Fill>
+            </For>
+        </Behaviors>
+        <p:Content xmlns="http://www.w3.org/2000/svg">
+            <defs>
+                <path
+                    d="M1408 1408q0 -261 -106.5 -461.5t-266.5 -306.5q160 -106 266.5 -306.5t106.5 -461.5h96q14 0 23 -9t9 -23v-64q0 -14 -9 -23t-23 -9h-1472q-14 0 -23 9t-9 23v64q0 14 9 23t23 9h96q0 261 106.5 461.5t266.5 306.5q-160 106 -266.5 306.5t-106.5 461.5h-96q-14 0 -23 9 t-9 23v64q0 14 9 23t23 9h1472q14 0 23 -9t9 -23v-64q0 -14 -9 -23t-23 -9h-96zM1280 1408h-1024q0 -206 85 -384h854q85 178 85 384zM1223 192q-54 141 -145.5 241.5t-194.5 142.5h-230q-103 -42 -194.5 -142.5t-145.5 -241.5h910z"
+                    id="glyph" transform="scale(0.015625, 0.015625) translate(220, 1664) scale(1,-1)" />
+            </defs>
+            <g id="group">
+                <rect fill="rgba(0, 0, 0, 0)" fill-opacity="0" height="32" stroke="none" width="32" x="0" y="0" />
+                <g transform="translate(1, 1)">
+                    <use id="shadow" xlink:href="#glyph" />
+                </g>
+                <use id="icon" xlink:href="#glyph" />
+            </g>
+        </p:Content>
+    </Shape>
+
+    <Shape displayName="hourglass-end/hourglass-3"
+        icon="data:image/svg+xml;charset=utf8,&lt;svg xmlns=&quot;http://www.w3.org/2000/svg&quot; id=&quot;glyph&quot; width=&quot;32&quot; height=&quot;32&quot; viewBox=&quot;0 0 2048 2048&quot;&gt;&lt;path d=&quot;M1408 1408q0 -261 -106.5 -461.5t-266.5 -306.5q160 -106 266.5 -306.5t106.5 -461.5h96q14 0 23 -9t9 -23v-64q0 -14 -9 -23t-23 -9h-1472q-14 0 -23 9t-9 23v64q0 14 9 23t23 9h96q0 261 106.5 461.5t266.5 306.5q-160 106 -266.5 306.5t-106.5 461.5h-96q-14 0 -23 9 t-9 23v64q0 14 9 23t23 9h1472q14 0 23 -9t9 -23v-64q0 -14 -9 -23t-23 -9h-96zM874 700q77 29 149 92.5t129.5 152.5t92.5 210t35 253h-1024q0 -132 35 -253t92.5 -210t129.5 -152.5t149 -92.5q19 -7 30.5 -23.5t11.5 -36.5t-11.5 -36.5t-30.5 -23.5q-137 -51 -244 -196 h700q-107 145 -244 196q-19 7 -30.5 23.5t-11.5 36.5t11.5 36.5t30.5 23.5z&quot; transform=&quot;translate(220, 1664) scale(1,-1)&quot; /&gt;&lt;/svg&gt;"
+        id="hourglass-end">
+        <Properties>
+            <PropertyGroup>
+                <Property displayName="Size" name="box" p:lockRatio="true" type="Dimension"><E>Dimension.fromString("" + $$initialSize.value + "," + $$initialSize.value)</E></Property>
+                <Property displayName="With Shadow" name="withShadow" type="Bool">
+                    <E>Bool.fromString($$withShadow.value)</E>
+                </Property>
+                <Property displayName="Disabled" name="disabled" type="Bool">false</Property>
+            </PropertyGroup>
+            <PropertyGroup name="Colors">
+                <Property displayName="Shadow Color" name="shadowColor" type="Color">
+                    <E>$$shadowColor</E>
+                </Property>
+                <Property displayName="Color" name="fillColor" type="Color">
+                    <E>$$fillColor</E>
+                </Property>
+            </PropertyGroup>
+            <PropertyGroup name="Disabled Color">
+                <Property displayName="Disabled Color" name="disabledColor" type="Color">
+                    <E>$$disabledColor</E>
+                </Property>
+            </PropertyGroup>
+        </Properties>
+        <Behaviors>
+            <For ref="shadow">
+                <Fill>$shadowColor</Fill>
+                <Visibility>$withShadow</Visibility>
+            </For>
+            <For ref="group">
+                <Transform>[scale($box.w/32, $box.w/32)]</Transform>
+            </For>
+            <For ref="icon">
+                <Fill>$disabled.value ? $disabledColor : $fillColor</Fill>
+            </For>
+        </Behaviors>
+        <p:Content xmlns="http://www.w3.org/2000/svg">
+            <defs>
+                <path
+                    d="M1408 1408q0 -261 -106.5 -461.5t-266.5 -306.5q160 -106 266.5 -306.5t106.5 -461.5h96q14 0 23 -9t9 -23v-64q0 -14 -9 -23t-23 -9h-1472q-14 0 -23 9t-9 23v64q0 14 9 23t23 9h96q0 261 106.5 461.5t266.5 306.5q-160 106 -266.5 306.5t-106.5 461.5h-96q-14 0 -23 9 t-9 23v64q0 14 9 23t23 9h1472q14 0 23 -9t9 -23v-64q0 -14 -9 -23t-23 -9h-96zM874 700q77 29 149 92.5t129.5 152.5t92.5 210t35 253h-1024q0 -132 35 -253t92.5 -210t129.5 -152.5t149 -92.5q19 -7 30.5 -23.5t11.5 -36.5t-11.5 -36.5t-30.5 -23.5q-137 -51 -244 -196 h700q-107 145 -244 196q-19 7 -30.5 23.5t-11.5 36.5t11.5 36.5t30.5 23.5z"
+                    id="glyph" transform="scale(0.015625, 0.015625) translate(220, 1664) scale(1,-1)" />
+            </defs>
+            <g id="group">
+                <rect fill="rgba(0, 0, 0, 0)" fill-opacity="0" height="32" stroke="none" width="32" x="0" y="0" />
+                <g transform="translate(1, 1)">
+                    <use id="shadow" xlink:href="#glyph" />
+                </g>
+                <use id="icon" xlink:href="#glyph" />
+            </g>
+        </p:Content>
+    </Shape>
+
+    <Shape displayName="hourglass-o"
+        icon="data:image/svg+xml;charset=utf8,&lt;svg xmlns=&quot;http://www.w3.org/2000/svg&quot; id=&quot;glyph&quot; width=&quot;32&quot; height=&quot;32&quot; viewBox=&quot;0 0 2048 2048&quot;&gt;&lt;path d=&quot;M1408 1408q0 -261 -106.5 -461.5t-266.5 -306.5q160 -106 266.5 -306.5t106.5 -461.5h96q14 0 23 -9t9 -23v-64q0 -14 -9 -23t-23 -9h-1472q-14 0 -23 9t-9 23v64q0 14 9 23t23 9h96q0 261 106.5 461.5t266.5 306.5q-160 106 -266.5 306.5t-106.5 461.5h-96q-14 0 -23 9 t-9 23v64q0 14 9 23t23 9h1472q14 0 23 -9t9 -23v-64q0 -14 -9 -23t-23 -9h-96zM874 700q77 29 149 92.5t129.5 152.5t92.5 210t35 253h-1024q0 -132 35 -253t92.5 -210t129.5 -152.5t149 -92.5q19 -7 30.5 -23.5t11.5 -36.5t-11.5 -36.5t-30.5 -23.5q-77 -29 -149 -92.5 t-129.5 -152.5t-92.5 -210t-35 -253h1024q0 132 -35 253t-92.5 210t-129.5 152.5t-149 92.5q-19 7 -30.5 23.5t-11.5 36.5t11.5 36.5t30.5 23.5z&quot; transform=&quot;translate(220, 1664) scale(1,-1)&quot; /&gt;&lt;/svg&gt;"
+        id="hourglass-o">
+        <Properties>
+            <PropertyGroup>
+                <Property displayName="Size" name="box" p:lockRatio="true" type="Dimension"><E>Dimension.fromString("" + $$initialSize.value + "," + $$initialSize.value)</E></Property>
+                <Property displayName="With Shadow" name="withShadow" type="Bool">
+                    <E>Bool.fromString($$withShadow.value)</E>
+                </Property>
+                <Property displayName="Disabled" name="disabled" type="Bool">false</Property>
+            </PropertyGroup>
+            <PropertyGroup name="Colors">
+                <Property displayName="Shadow Color" name="shadowColor" type="Color">
+                    <E>$$shadowColor</E>
+                </Property>
+                <Property displayName="Color" name="fillColor" type="Color">
+                    <E>$$fillColor</E>
+                </Property>
+            </PropertyGroup>
+            <PropertyGroup name="Disabled Color">
+                <Property displayName="Disabled Color" name="disabledColor" type="Color">
+                    <E>$$disabledColor</E>
+                </Property>
+            </PropertyGroup>
+        </Properties>
+        <Behaviors>
+            <For ref="shadow">
+                <Fill>$shadowColor</Fill>
+                <Visibility>$withShadow</Visibility>
+            </For>
+            <For ref="group">
+                <Transform>[scale($box.w/32, $box.w/32)]</Transform>
+            </For>
+            <For ref="icon">
+                <Fill>$disabled.value ? $disabledColor : $fillColor</Fill>
+            </For>
+        </Behaviors>
+        <p:Content xmlns="http://www.w3.org/2000/svg">
+            <defs>
+                <path
+                    d="M1408 1408q0 -261 -106.5 -461.5t-266.5 -306.5q160 -106 266.5 -306.5t106.5 -461.5h96q14 0 23 -9t9 -23v-64q0 -14 -9 -23t-23 -9h-1472q-14 0 -23 9t-9 23v64q0 14 9 23t23 9h96q0 261 106.5 461.5t266.5 306.5q-160 106 -266.5 306.5t-106.5 461.5h-96q-14 0 -23 9 t-9 23v64q0 14 9 23t23 9h1472q14 0 23 -9t9 -23v-64q0 -14 -9 -23t-23 -9h-96zM874 700q77 29 149 92.5t129.5 152.5t92.5 210t35 253h-1024q0 -132 35 -253t92.5 -210t129.5 -152.5t149 -92.5q19 -7 30.5 -23.5t11.5 -36.5t-11.5 -36.5t-30.5 -23.5q-77 -29 -149 -92.5 t-129.5 -152.5t-92.5 -210t-35 -253h1024q0 132 -35 253t-92.5 210t-129.5 152.5t-149 92.5q-19 7 -30.5 23.5t-11.5 36.5t11.5 36.5t30.5 23.5z"
+                    id="glyph" transform="scale(0.015625, 0.015625) translate(220, 1664) scale(1,-1)" />
+            </defs>
+            <g id="group">
+                <rect fill="rgba(0, 0, 0, 0)" fill-opacity="0" height="32" stroke="none" width="32" x="0" y="0" />
+                <g transform="translate(1, 1)">
+                    <use id="shadow" xlink:href="#glyph" />
+                </g>
+                <use id="icon" xlink:href="#glyph" />
+            </g>
+        </p:Content>
+    </Shape>
+
+    <Shape displayName="i-cursor"
+        icon="data:image/svg+xml;charset=utf8,&lt;svg xmlns=&quot;http://www.w3.org/2000/svg&quot; id=&quot;glyph&quot; width=&quot;32&quot; height=&quot;32&quot; viewBox=&quot;0 0 2048 2048&quot;&gt;&lt;path d=&quot;M832 1408q-320 0 -320 -224v-416h128v-128h-128v-544q0 -224 320 -224h64v-128h-64q-272 0 -384 146q-112 -146 -384 -146h-64v128h64q320 0 320 224v544h-128v128h128v416q0 224 -320 224h-64v128h64q272 0 384 -146q112 146 384 146h64v-128h-64z&quot; transform=&quot;translate(520, 1664) scale(1,-1)&quot; /&gt;&lt;/svg&gt;"
+        id="i-cursor">
+        <Properties>
+            <PropertyGroup>
+                <Property displayName="Size" name="box" p:lockRatio="true" type="Dimension"><E>Dimension.fromString("" + $$initialSize.value + "," + $$initialSize.value)</E></Property>
+                <Property displayName="With Shadow" name="withShadow" type="Bool">
+                    <E>Bool.fromString($$withShadow.value)</E>
+                </Property>
+                <Property displayName="Disabled" name="disabled" type="Bool">false</Property>
+            </PropertyGroup>
+            <PropertyGroup name="Colors">
+                <Property displayName="Shadow Color" name="shadowColor" type="Color">
+                    <E>$$shadowColor</E>
+                </Property>
+                <Property displayName="Color" name="fillColor" type="Color">
+                    <E>$$fillColor</E>
+                </Property>
+            </PropertyGroup>
+            <PropertyGroup name="Disabled Color">
+                <Property displayName="Disabled Color" name="disabledColor" type="Color">
+                    <E>$$disabledColor</E>
+                </Property>
+            </PropertyGroup>
+        </Properties>
+        <Behaviors>
+            <For ref="shadow">
+                <Fill>$shadowColor</Fill>
+                <Visibility>$withShadow</Visibility>
+            </For>
+            <For ref="group">
+                <Transform>[scale($box.w/32, $box.w/32)]</Transform>
+            </For>
+            <For ref="icon">
+                <Fill>$disabled.value ? $disabledColor : $fillColor</Fill>
+            </For>
+        </Behaviors>
+        <p:Content xmlns="http://www.w3.org/2000/svg">
+            <defs>
+                <path
+                    d="M832 1408q-320 0 -320 -224v-416h128v-128h-128v-544q0 -224 320 -224h64v-128h-64q-272 0 -384 146q-112 -146 -384 -146h-64v128h64q320 0 320 224v544h-128v128h128v416q0 224 -320 224h-64v128h64q272 0 384 -146q112 146 384 146h64v-128h-64z"
+                    id="glyph" transform="scale(0.015625, 0.015625) translate(520, 1664) scale(1,-1)" />
+            </defs>
+            <g id="group">
+                <rect fill="rgba(0, 0, 0, 0)" fill-opacity="0" height="32" stroke="none" width="32" x="0" y="0" />
+                <g transform="translate(1, 1)">
+                    <use id="shadow" xlink:href="#glyph" />
+                </g>
+                <use id="icon" xlink:href="#glyph" />
+            </g>
+        </p:Content>
+    </Shape>
+
+    <Shape displayName="id-badge"
+        icon="data:image/svg+xml;charset=utf8,&lt;svg xmlns=&quot;http://www.w3.org/2000/svg&quot; id=&quot;glyph&quot; width=&quot;32&quot; height=&quot;32&quot; viewBox=&quot;0 0 2048 2048&quot;&gt;&lt;path d=&quot;M1024 278q0 -64 -37 -107t-91 -43h-512q-54 0 -91 43t-37 107t9 118t29.5 104t61 78.5t96.5 28.5q80 -75 188 -75t188 75q56 0 96.5 -28.5t61 -78.5t29.5 -104t9 -118zM870 797q0 -94 -67.5 -160.5t-162.5 -66.5t-162.5 66.5t-67.5 160.5t67.5 160.5t162.5 66.5 t162.5 -66.5t67.5 -160.5zM1152 -96v1376h-1024v-1376q0 -13 9.5 -22.5t22.5 -9.5h960q13 0 22.5 9.5t9.5 22.5zM1280 1376v-1472q0 -66 -47 -113t-113 -47h-960q-66 0 -113 47t-47 113v1472q0 66 47 113t113 47h352v-96q0 -14 9 -23t23 -9h192q14 0 23 9t9 23v96h352 q66 0 113 -47t47 -113z&quot; transform=&quot;translate(360, 1664) scale(1,-1)&quot; /&gt;&lt;/svg&gt;"
+        id="id-badge">
+        <Properties>
+            <PropertyGroup>
+                <Property displayName="Size" name="box" p:lockRatio="true" type="Dimension"><E>Dimension.fromString("" + $$initialSize.value + "," + $$initialSize.value)</E></Property>
+                <Property displayName="With Shadow" name="withShadow" type="Bool">
+                    <E>Bool.fromString($$withShadow.value)</E>
+                </Property>
+                <Property displayName="Disabled" name="disabled" type="Bool">false</Property>
+            </PropertyGroup>
+            <PropertyGroup name="Colors">
+                <Property displayName="Shadow Color" name="shadowColor" type="Color">
+                    <E>$$shadowColor</E>
+                </Property>
+                <Property displayName="Color" name="fillColor" type="Color">
+                    <E>$$fillColor</E>
+                </Property>
+            </PropertyGroup>
+            <PropertyGroup name="Disabled Color">
+                <Property displayName="Disabled Color" name="disabledColor" type="Color">
+                    <E>$$disabledColor</E>
+                </Property>
+            </PropertyGroup>
+        </Properties>
+        <Behaviors>
+            <For ref="shadow">
+                <Fill>$shadowColor</Fill>
+                <Visibility>$withShadow</Visibility>
+            </For>
+            <For ref="group">
+                <Transform>[scale($box.w/32, $box.w/32)]</Transform>
+            </For>
+            <For ref="icon">
+                <Fill>$disabled.value ? $disabledColor : $fillColor</Fill>
+            </For>
+        </Behaviors>
+        <p:Content xmlns="http://www.w3.org/2000/svg">
+            <defs>
+                <path
+                    d="M1024 278q0 -64 -37 -107t-91 -43h-512q-54 0 -91 43t-37 107t9 118t29.5 104t61 78.5t96.5 28.5q80 -75 188 -75t188 75q56 0 96.5 -28.5t61 -78.5t29.5 -104t9 -118zM870 797q0 -94 -67.5 -160.5t-162.5 -66.5t-162.5 66.5t-67.5 160.5t67.5 160.5t162.5 66.5 t162.5 -66.5t67.5 -160.5zM1152 -96v1376h-1024v-1376q0 -13 9.5 -22.5t22.5 -9.5h960q13 0 22.5 9.5t9.5 22.5zM1280 1376v-1472q0 -66 -47 -113t-113 -47h-960q-66 0 -113 47t-47 113v1472q0 66 47 113t113 47h352v-96q0 -14 9 -23t23 -9h192q14 0 23 9t9 23v96h352 q66 0 113 -47t47 -113z"
+                    id="glyph" transform="scale(0.015625, 0.015625) translate(360, 1664) scale(1,-1)" />
+            </defs>
+            <g id="group">
+                <rect fill="rgba(0, 0, 0, 0)" fill-opacity="0" height="32" stroke="none" width="32" x="0" y="0" />
+                <g transform="translate(1, 1)">
+                    <use id="shadow" xlink:href="#glyph" />
+                </g>
+                <use id="icon" xlink:href="#glyph" />
+            </g>
+        </p:Content>
+    </Shape>
+
     <Shape displayName="id-card-o/drivers-license-o"
         icon="data:image/svg+xml;charset=utf8,&lt;svg xmlns=&quot;http://www.w3.org/2000/svg&quot; id=&quot;glyph&quot; width=&quot;32&quot; height=&quot;32&quot; viewBox=&quot;0 0 2048 2048&quot;&gt;&lt;path d=&quot;M896 324q0 -55 -31.5 -93.5t-75.5 -38.5h-426q-44 0 -75.5 38.5t-31.5 93.5q0 54 7.5 100.5t24.5 90t51 68.5t81 25q64 -64 156 -64t156 64q47 0 81 -25t51 -68.5t24.5 -90t7.5 -100.5zM768 768q0 -80 -56 -136t-136 -56t-136 56t-56 136t56 136t136 56t136 -56t56 -136z M1792 352v-64q0 -14 -9 -23t-23 -9h-704q-14 0 -23 9t-9 23v64q0 14 9 23t23 9h704q14 0 23 -9t9 -23zM1408 608v-64q0 -14 -9 -23t-23 -9h-320q-14 0 -23 9t-9 23v64q0 14 9 23t23 9h320q14 0 23 -9t9 -23zM1792 608v-64q0 -14 -9 -23t-23 -9h-192q-14 0 -23 9t-9 23v64 q0 14 9 23t23 9h192q14 0 23 -9t9 -23zM1792 864v-64q0 -14 -9 -23t-23 -9h-704q-14 0 -23 9t-9 23v64q0 14 9 23t23 9h704q14 0 23 -9t9 -23zM1920 32v1120h-1792v-1120q0 -13 9.5 -22.5t22.5 -9.5h1728q13 0 22.5 9.5t9.5 22.5zM2048 1248v-1216q0 -66 -47 -113t-113 -47 h-1728q-66 0 -113 47t-47 113v1216q0 66 47 113t113 47h1728q66 0 113 -47t47 -113z&quot; transform=&quot;translate(0, 1664) scale(1,-1)&quot; /&gt;&lt;/svg&gt;"
         id="id-card-o">
@@ -9247,6 +9883,271 @@
         </p:Content>
     </Shape>
 
+    <Shape displayName="inbox"
+        icon="data:image/svg+xml;charset=utf8,&lt;svg xmlns=&quot;http://www.w3.org/2000/svg&quot; id=&quot;glyph&quot; width=&quot;32&quot; height=&quot;32&quot; viewBox=&quot;0 0 2048 2048&quot;&gt;&lt;path d=&quot;M1023 576h316q-1 3 -2.5 8.5t-2.5 7.5l-212 496h-708l-212 -496q-1 -3 -2.5 -8.5t-2.5 -7.5h316l95 -192h320zM1536 546v-482q0 -26 -19 -45t-45 -19h-1408q-26 0 -45 19t-19 45v482q0 62 25 123l238 552q10 25 36.5 42t52.5 17h832q26 0 52.5 -17t36.5 -42l238 -552 q25 -61 25 -123z&quot; transform=&quot;translate(260, 1664) scale(1,-1)&quot; /&gt;&lt;/svg&gt;"
+        id="inbox">
+        <Properties>
+            <PropertyGroup>
+                <Property displayName="Size" name="box" p:lockRatio="true" type="Dimension"><E>Dimension.fromString("" + $$initialSize.value + "," + $$initialSize.value)</E></Property>
+                <Property displayName="With Shadow" name="withShadow" type="Bool">
+                    <E>Bool.fromString($$withShadow.value)</E>
+                </Property>
+                <Property displayName="Disabled" name="disabled" type="Bool">false</Property>
+            </PropertyGroup>
+            <PropertyGroup name="Colors">
+                <Property displayName="Shadow Color" name="shadowColor" type="Color">
+                    <E>$$shadowColor</E>
+                </Property>
+                <Property displayName="Color" name="fillColor" type="Color">
+                    <E>$$fillColor</E>
+                </Property>
+            </PropertyGroup>
+            <PropertyGroup name="Disabled Color">
+                <Property displayName="Disabled Color" name="disabledColor" type="Color">
+                    <E>$$disabledColor</E>
+                </Property>
+            </PropertyGroup>
+        </Properties>
+        <Behaviors>
+            <For ref="shadow">
+                <Fill>$shadowColor</Fill>
+                <Visibility>$withShadow</Visibility>
+            </For>
+            <For ref="group">
+                <Transform>[scale($box.w/32, $box.w/32)]</Transform>
+            </For>
+            <For ref="icon">
+                <Fill>$disabled.value ? $disabledColor : $fillColor</Fill>
+            </For>
+        </Behaviors>
+        <p:Content xmlns="http://www.w3.org/2000/svg">
+            <defs>
+                <path
+                    d="M1023 576h316q-1 3 -2.5 8.5t-2.5 7.5l-212 496h-708l-212 -496q-1 -3 -2.5 -8.5t-2.5 -7.5h316l95 -192h320zM1536 546v-482q0 -26 -19 -45t-45 -19h-1408q-26 0 -45 19t-19 45v482q0 62 25 123l238 552q10 25 36.5 42t52.5 17h832q26 0 52.5 -17t36.5 -42l238 -552 q25 -61 25 -123z"
+                    id="glyph" transform="scale(0.015625, 0.015625) translate(260, 1664) scale(1,-1)" />
+            </defs>
+            <g id="group">
+                <rect fill="rgba(0, 0, 0, 0)" fill-opacity="0" height="32" stroke="none" width="32" x="0" y="0" />
+                <g transform="translate(1, 1)">
+                    <use id="shadow" xlink:href="#glyph" />
+                </g>
+                <use id="icon" xlink:href="#glyph" />
+            </g>
+        </p:Content>
+    </Shape>
+
+    <Shape displayName="industry"
+        icon="data:image/svg+xml;charset=utf8,&lt;svg xmlns=&quot;http://www.w3.org/2000/svg&quot; id=&quot;glyph&quot; width=&quot;32&quot; height=&quot;32&quot; viewBox=&quot;0 0 2048 2048&quot;&gt;&lt;path d=&quot;M448 1536q26 0 45 -19t19 -45v-891l536 429q17 14 40 14q26 0 45 -19t19 -45v-379l536 429q17 14 40 14q26 0 45 -19t19 -45v-1152q0 -26 -19 -45t-45 -19h-1664q-26 0 -45 19t-19 45v1664q0 26 19 45t45 19h384z&quot; transform=&quot;translate(120, 1664) scale(1,-1)&quot; /&gt;&lt;/svg&gt;"
+        id="industry">
+        <Properties>
+            <PropertyGroup>
+                <Property displayName="Size" name="box" p:lockRatio="true" type="Dimension"><E>Dimension.fromString("" + $$initialSize.value + "," + $$initialSize.value)</E></Property>
+                <Property displayName="With Shadow" name="withShadow" type="Bool">
+                    <E>Bool.fromString($$withShadow.value)</E>
+                </Property>
+                <Property displayName="Disabled" name="disabled" type="Bool">false</Property>
+            </PropertyGroup>
+            <PropertyGroup name="Colors">
+                <Property displayName="Shadow Color" name="shadowColor" type="Color">
+                    <E>$$shadowColor</E>
+                </Property>
+                <Property displayName="Color" name="fillColor" type="Color">
+                    <E>$$fillColor</E>
+                </Property>
+            </PropertyGroup>
+            <PropertyGroup name="Disabled Color">
+                <Property displayName="Disabled Color" name="disabledColor" type="Color">
+                    <E>$$disabledColor</E>
+                </Property>
+            </PropertyGroup>
+        </Properties>
+        <Behaviors>
+            <For ref="shadow">
+                <Fill>$shadowColor</Fill>
+                <Visibility>$withShadow</Visibility>
+            </For>
+            <For ref="group">
+                <Transform>[scale($box.w/32, $box.w/32)]</Transform>
+            </For>
+            <For ref="icon">
+                <Fill>$disabled.value ? $disabledColor : $fillColor</Fill>
+            </For>
+        </Behaviors>
+        <p:Content xmlns="http://www.w3.org/2000/svg">
+            <defs>
+                <path
+                    d="M448 1536q26 0 45 -19t19 -45v-891l536 429q17 14 40 14q26 0 45 -19t19 -45v-379l536 429q17 14 40 14q26 0 45 -19t19 -45v-1152q0 -26 -19 -45t-45 -19h-1664q-26 0 -45 19t-19 45v1664q0 26 19 45t45 19h384z"
+                    id="glyph" transform="scale(0.015625, 0.015625) translate(120, 1664) scale(1,-1)" />
+            </defs>
+            <g id="group">
+                <rect fill="rgba(0, 0, 0, 0)" fill-opacity="0" height="32" stroke="none" width="32" x="0" y="0" />
+                <g transform="translate(1, 1)">
+                    <use id="shadow" xlink:href="#glyph" />
+                </g>
+                <use id="icon" xlink:href="#glyph" />
+            </g>
+        </p:Content>
+    </Shape>
+
+    <Shape displayName="info"
+        icon="data:image/svg+xml;charset=utf8,&lt;svg xmlns=&quot;http://www.w3.org/2000/svg&quot; id=&quot;glyph&quot; width=&quot;32&quot; height=&quot;32&quot; viewBox=&quot;0 0 2048 2048&quot;&gt;&lt;path d=&quot;M640 192v-128q0 -26 -19 -45t-45 -19h-512q-26 0 -45 19t-19 45v128q0 26 19 45t45 19h64v384h-64q-26 0 -45 19t-19 45v128q0 26 19 45t45 19h384q26 0 45 -19t19 -45v-576h64q26 0 45 -19t19 -45zM512 1344v-192q0 -26 -19 -45t-45 -19h-256q-26 0 -45 19t-19 45v192 q0 26 19 45t45 19h256q26 0 45 -19t19 -45z&quot; transform=&quot;translate(720, 1664) scale(1,-1)&quot; /&gt;&lt;/svg&gt;"
+        id="info">
+        <Properties>
+            <PropertyGroup>
+                <Property displayName="Size" name="box" p:lockRatio="true" type="Dimension"><E>Dimension.fromString("" + $$initialSize.value + "," + $$initialSize.value)</E></Property>
+                <Property displayName="With Shadow" name="withShadow" type="Bool">
+                    <E>Bool.fromString($$withShadow.value)</E>
+                </Property>
+                <Property displayName="Disabled" name="disabled" type="Bool">false</Property>
+            </PropertyGroup>
+            <PropertyGroup name="Colors">
+                <Property displayName="Shadow Color" name="shadowColor" type="Color">
+                    <E>$$shadowColor</E>
+                </Property>
+                <Property displayName="Color" name="fillColor" type="Color">
+                    <E>$$fillColor</E>
+                </Property>
+            </PropertyGroup>
+            <PropertyGroup name="Disabled Color">
+                <Property displayName="Disabled Color" name="disabledColor" type="Color">
+                    <E>$$disabledColor</E>
+                </Property>
+            </PropertyGroup>
+        </Properties>
+        <Behaviors>
+            <For ref="shadow">
+                <Fill>$shadowColor</Fill>
+                <Visibility>$withShadow</Visibility>
+            </For>
+            <For ref="group">
+                <Transform>[scale($box.w/32, $box.w/32)]</Transform>
+            </For>
+            <For ref="icon">
+                <Fill>$disabled.value ? $disabledColor : $fillColor</Fill>
+            </For>
+        </Behaviors>
+        <p:Content xmlns="http://www.w3.org/2000/svg">
+            <defs>
+                <path
+                    d="M640 192v-128q0 -26 -19 -45t-45 -19h-512q-26 0 -45 19t-19 45v128q0 26 19 45t45 19h64v384h-64q-26 0 -45 19t-19 45v128q0 26 19 45t45 19h384q26 0 45 -19t19 -45v-576h64q26 0 45 -19t19 -45zM512 1344v-192q0 -26 -19 -45t-45 -19h-256q-26 0 -45 19t-19 45v192 q0 26 19 45t45 19h256q26 0 45 -19t19 -45z"
+                    id="glyph" transform="scale(0.015625, 0.015625) translate(720, 1664) scale(1,-1)" />
+            </defs>
+            <g id="group">
+                <rect fill="rgba(0, 0, 0, 0)" fill-opacity="0" height="32" stroke="none" width="32" x="0" y="0" />
+                <g transform="translate(1, 1)">
+                    <use id="shadow" xlink:href="#glyph" />
+                </g>
+                <use id="icon" xlink:href="#glyph" />
+            </g>
+        </p:Content>
+    </Shape>
+
+    <Shape displayName="info-circle"
+        icon="data:image/svg+xml;charset=utf8,&lt;svg xmlns=&quot;http://www.w3.org/2000/svg&quot; id=&quot;glyph&quot; width=&quot;32&quot; height=&quot;32&quot; viewBox=&quot;0 0 2048 2048&quot;&gt;&lt;path d=&quot;M1024 160v160q0 14 -9 23t-23 9h-96v512q0 14 -9 23t-23 9h-320q-14 0 -23 -9t-9 -23v-160q0 -14 9 -23t23 -9h96v-320h-96q-14 0 -23 -9t-9 -23v-160q0 -14 9 -23t23 -9h448q14 0 23 9t9 23zM896 1056v160q0 14 -9 23t-23 9h-192q-14 0 -23 -9t-9 -23v-160q0 -14 9 -23 t23 -9h192q14 0 23 9t9 23zM1536 640q0 -209 -103 -385.5t-279.5 -279.5t-385.5 -103t-385.5 103t-279.5 279.5t-103 385.5t103 385.5t279.5 279.5t385.5 103t385.5 -103t279.5 -279.5t103 -385.5z&quot; transform=&quot;translate(220, 1664) scale(1,-1)&quot; /&gt;&lt;/svg&gt;"
+        id="info-circle">
+        <Properties>
+            <PropertyGroup>
+                <Property displayName="Size" name="box" p:lockRatio="true" type="Dimension"><E>Dimension.fromString("" + $$initialSize.value + "," + $$initialSize.value)</E></Property>
+                <Property displayName="With Shadow" name="withShadow" type="Bool">
+                    <E>Bool.fromString($$withShadow.value)</E>
+                </Property>
+                <Property displayName="Disabled" name="disabled" type="Bool">false</Property>
+            </PropertyGroup>
+            <PropertyGroup name="Colors">
+                <Property displayName="Shadow Color" name="shadowColor" type="Color">
+                    <E>$$shadowColor</E>
+                </Property>
+                <Property displayName="Color" name="fillColor" type="Color">
+                    <E>$$fillColor</E>
+                </Property>
+            </PropertyGroup>
+            <PropertyGroup name="Disabled Color">
+                <Property displayName="Disabled Color" name="disabledColor" type="Color">
+                    <E>$$disabledColor</E>
+                </Property>
+            </PropertyGroup>
+        </Properties>
+        <Behaviors>
+            <For ref="shadow">
+                <Fill>$shadowColor</Fill>
+                <Visibility>$withShadow</Visibility>
+            </For>
+            <For ref="group">
+                <Transform>[scale($box.w/32, $box.w/32)]</Transform>
+            </For>
+            <For ref="icon">
+                <Fill>$disabled.value ? $disabledColor : $fillColor</Fill>
+            </For>
+        </Behaviors>
+        <p:Content xmlns="http://www.w3.org/2000/svg">
+            <defs>
+                <path
+                    d="M1024 160v160q0 14 -9 23t-23 9h-96v512q0 14 -9 23t-23 9h-320q-14 0 -23 -9t-9 -23v-160q0 -14 9 -23t23 -9h96v-320h-96q-14 0 -23 -9t-9 -23v-160q0 -14 9 -23t23 -9h448q14 0 23 9t9 23zM896 1056v160q0 14 -9 23t-23 9h-192q-14 0 -23 -9t-9 -23v-160q0 -14 9 -23 t23 -9h192q14 0 23 9t9 23zM1536 640q0 -209 -103 -385.5t-279.5 -279.5t-385.5 -103t-385.5 103t-279.5 279.5t-103 385.5t103 385.5t279.5 279.5t385.5 103t385.5 -103t279.5 -279.5t103 -385.5z"
+                    id="glyph" transform="scale(0.015625, 0.015625) translate(220, 1664) scale(1,-1)" />
+            </defs>
+            <g id="group">
+                <rect fill="rgba(0, 0, 0, 0)" fill-opacity="0" height="32" stroke="none" width="32" x="0" y="0" />
+                <g transform="translate(1, 1)">
+                    <use id="shadow" xlink:href="#glyph" />
+                </g>
+                <use id="icon" xlink:href="#glyph" />
+            </g>
+        </p:Content>
+    </Shape>
+
+    <Shape displayName="key"
+        icon="data:image/svg+xml;charset=utf8,&lt;svg xmlns=&quot;http://www.w3.org/2000/svg&quot; id=&quot;glyph&quot; width=&quot;32&quot; height=&quot;32&quot; viewBox=&quot;0 0 2048 2048&quot;&gt;&lt;path d=&quot;M832 1024q0 80 -56 136t-136 56t-136 -56t-56 -136q0 -42 19 -83q-41 19 -83 19q-80 0 -136 -56t-56 -136t56 -136t136 -56t136 56t56 136q0 42 -19 83q41 -19 83 -19q80 0 136 56t56 136zM1683 320q0 -17 -49 -66t-66 -49q-9 0 -28.5 16t-36.5 33t-38.5 40t-24.5 26 l-96 -96l220 -220q28 -28 28 -68q0 -42 -39 -81t-81 -39q-40 0 -68 28l-671 671q-176 -131 -365 -131q-163 0 -265.5 102.5t-102.5 265.5q0 160 95 313t248 248t313 95q163 0 265.5 -102.5t102.5 -265.5q0 -189 -131 -365l355 -355l96 96q-3 3 -26 24.5t-40 38.5t-33 36.5 t-16 28.5q0 17 49 66t66 49q13 0 23 -10q6 -6 46 -44.5t82 -79.5t86.5 -86t73 -78t28.5 -41z&quot; transform=&quot;translate(220, 1664) scale(1,-1)&quot; /&gt;&lt;/svg&gt;"
+        id="key">
+        <Properties>
+            <PropertyGroup>
+                <Property displayName="Size" name="box" p:lockRatio="true" type="Dimension"><E>Dimension.fromString("" + $$initialSize.value + "," + $$initialSize.value)</E></Property>
+                <Property displayName="With Shadow" name="withShadow" type="Bool">
+                    <E>Bool.fromString($$withShadow.value)</E>
+                </Property>
+                <Property displayName="Disabled" name="disabled" type="Bool">false</Property>
+            </PropertyGroup>
+            <PropertyGroup name="Colors">
+                <Property displayName="Shadow Color" name="shadowColor" type="Color">
+                    <E>$$shadowColor</E>
+                </Property>
+                <Property displayName="Color" name="fillColor" type="Color">
+                    <E>$$fillColor</E>
+                </Property>
+            </PropertyGroup>
+            <PropertyGroup name="Disabled Color">
+                <Property displayName="Disabled Color" name="disabledColor" type="Color">
+                    <E>$$disabledColor</E>
+                </Property>
+            </PropertyGroup>
+        </Properties>
+        <Behaviors>
+            <For ref="shadow">
+                <Fill>$shadowColor</Fill>
+                <Visibility>$withShadow</Visibility>
+            </For>
+            <For ref="group">
+                <Transform>[scale($box.w/32, $box.w/32)]</Transform>
+            </For>
+            <For ref="icon">
+                <Fill>$disabled.value ? $disabledColor : $fillColor</Fill>
+            </For>
+        </Behaviors>
+        <p:Content xmlns="http://www.w3.org/2000/svg">
+            <defs>
+                <path
+                    d="M832 1024q0 80 -56 136t-136 56t-136 -56t-56 -136q0 -42 19 -83q-41 19 -83 19q-80 0 -136 -56t-56 -136t56 -136t136 -56t136 56t56 136q0 42 -19 83q41 -19 83 -19q80 0 136 56t56 136zM1683 320q0 -17 -49 -66t-66 -49q-9 0 -28.5 16t-36.5 33t-38.5 40t-24.5 26 l-96 -96l220 -220q28 -28 28 -68q0 -42 -39 -81t-81 -39q-40 0 -68 28l-671 671q-176 -131 -365 -131q-163 0 -265.5 102.5t-102.5 265.5q0 160 95 313t248 248t313 95q163 0 265.5 -102.5t102.5 -265.5q0 -189 -131 -365l355 -355l96 96q-3 3 -26 24.5t-40 38.5t-33 36.5 t-16 28.5q0 17 49 66t66 49q13 0 23 -10q6 -6 46 -44.5t82 -79.5t86.5 -86t73 -78t28.5 -41z"
+                    id="glyph" transform="scale(0.015625, 0.015625) translate(220, 1664) scale(1,-1)" />
+            </defs>
+            <g id="group">
+                <rect fill="rgba(0, 0, 0, 0)" fill-opacity="0" height="32" stroke="none" width="32" x="0" y="0" />
+                <g transform="translate(1, 1)">
+                    <use id="shadow" xlink:href="#glyph" />
+                </g>
+                <use id="icon" xlink:href="#glyph" />
+            </g>
+        </p:Content>
+    </Shape>
+
     <Shape displayName="pencil-square-o/edit"
         icon="data:image/svg+xml;charset=utf8,&lt;svg xmlns=&quot;http://www.w3.org/2000/svg&quot; id=&quot;glyph&quot; width=&quot;32&quot; height=&quot;32&quot; viewBox=&quot;0 0 2048 2048&quot;&gt;&lt;path d=&quot;M888 352l116 116l-152 152l-116 -116v-56h96v-96h56zM1328 1072q-16 16 -33 -1l-350 -350q-17 -17 -1 -33t33 1l350 350q17 17 1 33zM1408 478v-190q0 -119 -84.5 -203.5t-203.5 -84.5h-832q-119 0 -203.5 84.5t-84.5 203.5v832q0 119 84.5 203.5t203.5 84.5h832 q63 0 117 -25q15 -7 18 -23q3 -17 -9 -29l-49 -49q-14 -14 -32 -8q-23 6 -45 6h-832q-66 0 -113 -47t-47 -113v-832q0 -66 47 -113t113 -47h832q66 0 113 47t47 113v126q0 13 9 22l64 64q15 15 35 7t20 -29zM1312 1216l288 -288l-672 -672h-288v288zM1756 1084l-92 -92 l-288 288l92 92q28 28 68 28t68 -28l152 -152q28 -28 28 -68t-28 -68z&quot; transform=&quot;translate(120, 1664) scale(1,-1)&quot; /&gt;&lt;/svg&gt;"
         id="pencil-square-o">
@@ -9289,6 +10190,59 @@
                 <path
                     d="M888 352l116 116l-152 152l-116 -116v-56h96v-96h56zM1328 1072q-16 16 -33 -1l-350 -350q-17 -17 -1 -33t33 1l350 350q17 17 1 33zM1408 478v-190q0 -119 -84.5 -203.5t-203.5 -84.5h-832q-119 0 -203.5 84.5t-84.5 203.5v832q0 119 84.5 203.5t203.5 84.5h832 q63 0 117 -25q15 -7 18 -23q3 -17 -9 -29l-49 -49q-14 -14 -32 -8q-23 6 -45 6h-832q-66 0 -113 -47t-47 -113v-832q0 -66 47 -113t113 -47h832q66 0 113 47t47 113v126q0 13 9 22l64 64q15 15 35 7t20 -29zM1312 1216l288 -288l-672 -672h-288v288zM1756 1084l-92 -92 l-288 288l92 92q28 28 68 28t68 -28l152 -152q28 -28 28 -68t-28 -68z"
                     id="glyph" transform="scale(0.015625, 0.015625) translate(120, 1664) scale(1,-1)" />
+            </defs>
+            <g id="group">
+                <rect fill="rgba(0, 0, 0, 0)" fill-opacity="0" height="32" stroke="none" width="32" x="0" y="0" />
+                <g transform="translate(1, 1)">
+                    <use id="shadow" xlink:href="#glyph" />
+                </g>
+                <use id="icon" xlink:href="#glyph" />
+            </g>
+        </p:Content>
+    </Shape>
+
+    <Shape displayName="picture-o/photo/image"
+        icon="data:image/svg+xml;charset=utf8,&lt;svg xmlns=&quot;http://www.w3.org/2000/svg&quot; id=&quot;glyph&quot; width=&quot;32&quot; height=&quot;32&quot; viewBox=&quot;0 0 2048 2048&quot;&gt;&lt;path d=&quot;M640 960q0 -80 -56 -136t-136 -56t-136 56t-56 136t56 136t136 56t136 -56t56 -136zM1664 576v-448h-1408v192l320 320l160 -160l512 512zM1760 1280h-1600q-13 0 -22.5 -9.5t-9.5 -22.5v-1216q0 -13 9.5 -22.5t22.5 -9.5h1600q13 0 22.5 9.5t9.5 22.5v1216 q0 13 -9.5 22.5t-22.5 9.5zM1920 1248v-1216q0 -66 -47 -113t-113 -47h-1600q-66 0 -113 47t-47 113v1216q0 66 47 113t113 47h1600q66 0 113 -47t47 -113z&quot; transform=&quot;translate(60, 1664) scale(1,-1)&quot; /&gt;&lt;/svg&gt;"
+        id="picture-o">
+        <Properties>
+            <PropertyGroup>
+                <Property displayName="Size" name="box" p:lockRatio="true" type="Dimension"><E>Dimension.fromString("" + $$initialSize.value + "," + $$initialSize.value)</E></Property>
+                <Property displayName="With Shadow" name="withShadow" type="Bool">
+                    <E>Bool.fromString($$withShadow.value)</E>
+                </Property>
+                <Property displayName="Disabled" name="disabled" type="Bool">false</Property>
+            </PropertyGroup>
+            <PropertyGroup name="Colors">
+                <Property displayName="Shadow Color" name="shadowColor" type="Color">
+                    <E>$$shadowColor</E>
+                </Property>
+                <Property displayName="Color" name="fillColor" type="Color">
+                    <E>$$fillColor</E>
+                </Property>
+            </PropertyGroup>
+            <PropertyGroup name="Disabled Color">
+                <Property displayName="Disabled Color" name="disabledColor" type="Color">
+                    <E>$$disabledColor</E>
+                </Property>
+            </PropertyGroup>
+        </Properties>
+        <Behaviors>
+            <For ref="shadow">
+                <Fill>$shadowColor</Fill>
+                <Visibility>$withShadow</Visibility>
+            </For>
+            <For ref="group">
+                <Transform>[scale($box.w/32, $box.w/32)]</Transform>
+            </For>
+            <For ref="icon">
+                <Fill>$disabled.value ? $disabledColor : $fillColor</Fill>
+            </For>
+        </Behaviors>
+        <p:Content xmlns="http://www.w3.org/2000/svg">
+            <defs>
+                <path
+                    d="M640 960q0 -80 -56 -136t-136 -56t-136 56t-56 136t56 136t136 56t136 -56t56 -136zM1664 576v-448h-1408v192l320 320l160 -160l512 512zM1760 1280h-1600q-13 0 -22.5 -9.5t-9.5 -22.5v-1216q0 -13 9.5 -22.5t22.5 -9.5h1600q13 0 22.5 9.5t9.5 22.5v1216 q0 13 -9.5 22.5t-22.5 9.5zM1920 1248v-1216q0 -66 -47 -113t-113 -47h-1600q-66 0 -113 47t-47 113v1216q0 66 47 113t113 47h1600q66 0 113 -47t47 -113z"
+                    id="glyph" transform="scale(0.015625, 0.015625) translate(60, 1664) scale(1,-1)" />
             </defs>
             <g id="group">
                 <rect fill="rgba(0, 0, 0, 0)" fill-opacity="0" height="32" stroke="none" width="32" x="0" y="0" />
@@ -9448,6 +10402,59 @@
                 <path
                     d="M1298 214q0 -40 -28 -68l-136 -136q-28 -28 -68 -28t-68 28l-294 294l-294 -294q-28 -28 -68 -28t-68 28l-136 136q-28 28 -28 68t28 68l294 294l-294 294q-28 28 -28 68t28 68l136 136q28 28 68 28t68 -28l294 -294l294 294q28 28 68 28t68 -28l136 -136q28 -28 28 -68 t-28 -68l-294 -294l294 -294q28 -28 28 -68z"
                     id="glyph" transform="scale(0.015625, 0.015625) translate(320, 1664) scale(1,-1)" />
+            </defs>
+            <g id="group">
+                <rect fill="rgba(0, 0, 0, 0)" fill-opacity="0" height="32" stroke="none" width="32" x="0" y="0" />
+                <g transform="translate(1, 1)">
+                    <use id="shadow" xlink:href="#glyph" />
+                </g>
+                <use id="icon" xlink:href="#glyph" />
+            </g>
+        </p:Content>
+    </Shape>
+
+    <Shape displayName="university/bank/institution"
+        icon="data:image/svg+xml;charset=utf8,&lt;svg xmlns=&quot;http://www.w3.org/2000/svg&quot; id=&quot;glyph&quot; width=&quot;32&quot; height=&quot;32&quot; viewBox=&quot;0 0 2048 2048&quot;&gt;&lt;path d=&quot;M960 1536l960 -384v-128h-128q0 -26 -20.5 -45t-48.5 -19h-1526q-28 0 -48.5 19t-20.5 45h-128v128zM256 896h256v-768h128v768h256v-768h128v768h256v-768h128v768h256v-768h59q28 0 48.5 -19t20.5 -45v-64h-1664v64q0 26 20.5 45t48.5 19h59v768zM1851 -64 q28 0 48.5 -19t20.5 -45v-128h-1920v128q0 26 20.5 45t48.5 19h1782z&quot; transform=&quot;translate(0, 1664) scale(1,-1)&quot; /&gt;&lt;/svg&gt;"
+        id="university">
+        <Properties>
+            <PropertyGroup>
+                <Property displayName="Size" name="box" p:lockRatio="true" type="Dimension"><E>Dimension.fromString("" + $$initialSize.value + "," + $$initialSize.value)</E></Property>
+                <Property displayName="With Shadow" name="withShadow" type="Bool">
+                    <E>Bool.fromString($$withShadow.value)</E>
+                </Property>
+                <Property displayName="Disabled" name="disabled" type="Bool">false</Property>
+            </PropertyGroup>
+            <PropertyGroup name="Colors">
+                <Property displayName="Shadow Color" name="shadowColor" type="Color">
+                    <E>$$shadowColor</E>
+                </Property>
+                <Property displayName="Color" name="fillColor" type="Color">
+                    <E>$$fillColor</E>
+                </Property>
+            </PropertyGroup>
+            <PropertyGroup name="Disabled Color">
+                <Property displayName="Disabled Color" name="disabledColor" type="Color">
+                    <E>$$disabledColor</E>
+                </Property>
+            </PropertyGroup>
+        </Properties>
+        <Behaviors>
+            <For ref="shadow">
+                <Fill>$shadowColor</Fill>
+                <Visibility>$withShadow</Visibility>
+            </For>
+            <For ref="group">
+                <Transform>[scale($box.w/32, $box.w/32)]</Transform>
+            </For>
+            <For ref="icon">
+                <Fill>$disabled.value ? $disabledColor : $fillColor</Fill>
+            </For>
+        </Behaviors>
+        <p:Content xmlns="http://www.w3.org/2000/svg">
+            <defs>
+                <path
+                    d="M960 1536l960 -384v-128h-128q0 -26 -20.5 -45t-48.5 -19h-1526q-28 0 -48.5 19t-20.5 45h-128v128zM256 896h256v-768h128v768h256v-768h128v768h256v-768h128v768h256v-768h59q28 0 48.5 -19t20.5 -45v-64h-1664v64q0 26 20.5 45t48.5 19h59v768zM1851 -64 q28 0 48.5 -19t20.5 -45v-128h-1920v128q0 26 20.5 45t48.5 19h1782z"
+                    id="glyph" transform="scale(0.015625, 0.015625) translate(0, 1664) scale(1,-1)" />
             </defs>
             <g id="group">
                 <rect fill="rgba(0, 0, 0, 0)" fill-opacity="0" height="32" stroke="none" width="32" x="0" y="0" />
